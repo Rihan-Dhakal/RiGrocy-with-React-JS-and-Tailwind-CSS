@@ -11,9 +11,9 @@ import { BsTruck } from 'react-icons/bs';
 const Process = () => {
     const renderSteps = steps.map((step) => {
         return (
-            <div className=''>
-                <span className='text-8xl w-18 h-18  flex justify-center items-center outline-[3px] outline-zinc-800 outline-offset-7 outline-dashed rounded-full   '>{step.number}</span>
-                <div className='flex items-center '>
+            <div className={`flex-1 ${step.id % 2 === 0 ? 'md:-mt-50' : ''}`}>
+                <span className='text-8xl w-18 h-18 flex justify-center items-center outline-[3px] outline-zinc-800 outline-offset-7 outline-dashed rounded-full mx-auto  '>{step.number}</span>
+                <div className='flex items-center mt-10 '>
 
                     <span className='flex bg-gradient-to-b from-orange-400 to-orange-500 text-white text-3xl w-20 h-15 justify-center items-center rounded-full mr-5 '>{step.icon}</span>
 
@@ -37,7 +37,7 @@ const Process = () => {
                 </div>
 
                 {/* STEPS */}
-                <div className='flex flex-1 gap-10 mt-20 items-center justify-center' >
+                <div className='flex flex-wrap flex-1 gap-10 md:mt-20 items-center justify-center md:pt-50 pt-20' >
                     {renderSteps}
                 </div>
 
