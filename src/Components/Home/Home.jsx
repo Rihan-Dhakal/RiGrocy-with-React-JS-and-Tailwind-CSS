@@ -10,6 +10,7 @@ import Process from '../Process/Process'
 import Testimonials from '../Testimonials/Testimonials'
 import Footer from '../Footer/Footer'
 
+
 const Home = () => {
     return (
         <div>
@@ -20,8 +21,9 @@ const Home = () => {
             <Product />
             <Discount />
             <Process />
-            {/* <Testimonials /> */}
+            <Testimonials />
             <Footer />
+
         </div>
     )
 }

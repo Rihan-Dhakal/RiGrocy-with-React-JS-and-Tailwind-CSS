@@ -7,7 +7,7 @@ const Values = () => {
     const leftValue = value.slice(0, 2).map(left => {
         return (
 
-            <div key={left.id} className='flex md:flex-row-reverse items-center'>
+            <div key={left.id} className='flex md:flex-row-reverse items-center '>
                 <div>
                     <span className='bg-gradient-to-b from-orange-400 to-orange-500 w-15 h-15 flex rounded-full justify-center items-center text-3xl text-white'>{left.icon}</span>
                 </div>
@@ -43,11 +43,11 @@ const Values = () => {
 
     return (
         <section>
-            <div className='max-w-[1400px] px-[3rem] mx-auto py-20  '>
+            <div className='max-w-[1400px] px-[3rem] mx-auto py-20'>
                 <Heading highlight='Our' heading='Values' />
-                <div className='flex md:flex-row flex-col gap-15 md:gap-5'>
+                <div className='flex md:flex-row flex-col gap-15 md:gap-5 '>
                     {/* LEFT VALUES */}
-                    <div className='md:min-h-100 gap-15 flex flex-col justify-between' >
+                    <div className='md:min-h-100 gap-15 flex flex-col justify-between mt-20' >
                         {leftValue}
                     </div>
                     {/* IMG */}
