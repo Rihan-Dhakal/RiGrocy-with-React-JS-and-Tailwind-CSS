@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const Footer = () => {
     return (
         <footer className='bg-zinc-100 py-20'>
-            <div className=' flex  flex-wrap max-w-[1400px] mx-auto px-[3rem] gap-y-14 '>
+            <div className=' flex  flex-wrap max-w-[1400px] mx-auto px-[3rem] gap-y-14~ '>
                 <div className='flex-1 basis-[300px]'>
                     <a href="#" className='text-3xl font-semibold'>Ri<span className='text-orange-500'>G</span>rocy</a>
                     <p className='text-zinc-600 mt-6 max-w-[350px]'>Bred for a high content of benificial substances. Our product are all fresh and healthy.</p>
