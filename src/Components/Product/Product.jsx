@@ -3,6 +3,7 @@ import Heading from '../Heading/Heading'
 import ProductList from '../ProductList/ProductList'
 import Cards from '../Cards/Cards'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 const Product = () => {
     const categories = ['All', 'Fruits', 'Vegetables', 'Dairy', 'SeaFood']
@@ -48,7 +49,7 @@ const Product = () => {
                 </div>
 
                 <div className='mt-15 mx-auto w-fit'>
-                    <Button content='View All' />
+                    <Link to="/product" className='bg-gradient-to-b from-orange-500 to-orange-600 px-7 py-3 text-white rounded-xl md:text-lg text-md hover:scale-105 transition-all duration-300 hover:to-orange-700 cursor-pointer'>View All</Link>
                 </div>
 
             </div>

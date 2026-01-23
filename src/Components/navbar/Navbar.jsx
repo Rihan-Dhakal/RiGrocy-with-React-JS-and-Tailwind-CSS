@@ -5,6 +5,7 @@ import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { TbMenu2 } from "react-icons/tb";
 import { TbMenu3 } from "react-icons/tb";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
         <header className={`bg-white fixed top-0 left-0 right-0 z-50 ${isScrolled ? 'shadow-lg' : null}`}>
             <nav className='max-w-[1400px] mx-auto px-[3rem] flex justify-between items-center md:h-[14vh] h-[12vh] '>
                 {/* LOGO */}
-                <a href="#" className='text-3xl font-semibold'>Ri<span className='text-orange-500'>G</span>rocy</a>
+                <Link to="/" className='text-3xl font-semibold'>Ri<span className='text-orange-500'>G</span>rocy</Link>
                 {/* DESKTOP MENU */}
                 <ul className='md:flex gap-x-15  hidden '>
                     <li><a href="#" className='font-semibold tracking-wider text-orange-500'>Home</a></li>
